@@ -5,10 +5,12 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
+read -formal wrapper.v aes_control.v aes_128_encrypt.v
 prep -top wrapped_project
 
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+aes_control.v
+aes/aes_128_encrypt.v
+
